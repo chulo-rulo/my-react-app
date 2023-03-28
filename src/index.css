@@ -5,9 +5,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a {
+  color: orangered;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.list p {
+  display: inline-block;
+}
+.vehicle {
+  color: yellow;
+}
+.jsx {
+  color:red;
+}
+.result {
+  color: green;
+}
+.garage {
+  font-size: 5vw; /* make our h1 tag larger */
+  font-family: sans-serif; /* choosing our font */
+  background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); /* you can change the colors based on your preference */
+  background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+  -webkit-background-clip: text; /*for browsers compatibility */
+  -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+  animation: wave 2000ms ease alternate infinite;
+  transition: all 0.4s ease;
+}
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50vw 10px;
+  }
+}
+
+.state button, input {
+  background-color: blue;
+  color: white;
+  padding: 0.5%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5%;
+}
+#one_text {
+  margin-top: 1%;
+  width:25%;
+  height: 20%;
+  background-color: #000;
+  color: antiquewhite;
+}
+.select select{
+  margin-top: 1%;
+  width:20%;
+  background-color: #f28a2f;
+  color: #000;
+  font-weight: bolder;
+}
+ul {
+  list-style: none;
 }
